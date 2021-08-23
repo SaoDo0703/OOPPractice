@@ -1,6 +1,8 @@
-package com.javacoban.oop;
+package com.javacoban.opp_optional;
 
-public class Newspaper extends Document{
+import com.javacoban.opp_optional.Document;
+
+public class Newspaper extends Document {
     private int releaseDate  ;
 
     public Newspaper(String documentCode, String imprint, int releaseNumber, int releaseDate){

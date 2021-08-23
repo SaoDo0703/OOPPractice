@@ -1,4 +1,6 @@
-package com.javacoban.oop;
+package com.javacoban.opp_optional;
+
+import com.javacoban.opp_optional.Document;
 
 public class Main2 {
     public static void main(String[] args) {

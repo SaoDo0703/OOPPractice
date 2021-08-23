@@ -1,6 +1,8 @@
-package com.javacoban.oop;
+package com.javacoban.opp_optional;
 
-public class Magazine extends Document{
+import com.javacoban.opp_optional.Document;
+
+public class Magazine extends Document {
     private int issueNumber;
     private int releaseMonth;
 

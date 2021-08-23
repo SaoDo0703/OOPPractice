@@ -1,6 +1,6 @@
 package com.javacoban.oop;
 
-public class Worker extends Employee{
+public class Worker extends Employee {
     private String factory;
 
 

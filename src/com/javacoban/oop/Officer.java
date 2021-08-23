@@ -1,6 +1,6 @@
 package com.javacoban.oop;
 
-public class Officer extends Employee{
+public class Officer extends Employee {
     private String department;
     private int level;
 

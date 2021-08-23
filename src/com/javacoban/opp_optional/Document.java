@@ -1,4 +1,4 @@
-package com.javacoban.oop;
+package com.javacoban.opp_optional;
 
 public class Document {
     private String documentCode;

@@ -1,6 +1,8 @@
-package com.javacoban.oop;
+package com.javacoban.opp_optional;
 
-public class Book extends Document{
+import com.javacoban.opp_optional.Document;
+
+public class Book extends Document {
     private String authorName;
     private int numberOfPages;
 
