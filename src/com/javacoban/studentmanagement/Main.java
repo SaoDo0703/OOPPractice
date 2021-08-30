@@ -12,6 +12,7 @@ public class Main {
         while (true) {
             System.out.println("Enter Choose");
             int number = scanner.nextInt();
+            scanner.nextLine();
             switch (number) {
                 case 1:
                     Student student = inputInfor();
@@ -32,32 +33,27 @@ public class Main {
                 case 3:
                     System.out.println("Enter ID You Need Search");
                     int inputID = scanner.nextInt();
-                    for(Student student1 : studentsList){
-                        if(student1 == studentManagement.searchByID(inputID)){
-                            display(student1);
+                    Student student1 = studentManagement.searchByID(inputID);
+                    if(student1 == null){
+                        System.out.println("Not Found ID You Need");
                         }else{
-                            System.out.println("Not Found ID You Need");
-                        }
+                        display(student1);
                     }
                     break;
 
                 case 4:
-                    System.out.println("Enter Name You Need Search");
-                    String name = scanner.nextLine();
-                    scanner.nextLine();
-                    for(Student student1 : studentsList){
-                        if(student1 == studentManagement.searchByName(name)){
-                            display(student1);
-                            break;
-                        }else{
-                            System.out.println("Not Found Name You Need");
+                    System.out.println("Enter Student Name You Want To Search");
+                    String inputName = scanner.nextLine();
+                     Student student2 = studentManagement.searchByName(inputName);
+                        if(student2 == null){
+                            System.out.println("Not Found Name");
+                        } else{
+                            display(student2);
                         }
-                    }
                     break;
-
                 case 5:
-                    for(Student student1: studentsList){
-                        display(student1);
+                    for(Student st: studentsList){
+                        display(st);
                     }
                     break;
 

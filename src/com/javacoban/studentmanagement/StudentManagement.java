@@ -27,9 +27,9 @@ public class StudentManagement {
         return null;
     }
     public Student searchByName(String name){
-        for (Student student1 : studentList){
-            if(student1.getName().equalsIgnoreCase(name)){
-                return student1;
+        for( Student student : studentList){
+            if(student.getName().equals(name)){
+                return student;
             }
         }
         return null;
